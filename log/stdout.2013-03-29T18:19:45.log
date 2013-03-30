@@ -1,0 +1,85 @@
+[Fri, 29 Mar 2013 21:58:06 GMT] INFO Server starting with config: {
+  "environment": "development",
+  "workers": 1,
+  "port": 4000,
+  "spdy": null,
+  "ssl": null,
+  "debug": true,
+  "rotateWorkers": false,
+  "rotationWindow": 7200000,
+  "rotationTimeout": 300000,
+  "logDir": "/Users/nikki/work/ikenga/log",
+  "gracefulShutdownTimeout": 30000,
+  "heartbeatInterval": 5000,
+  "heartbeatWindow": 20000,
+  "staticFilePath": "/Users/nikki/work/ikenga/public",
+  "sessions": {
+    "store": "memory",
+    "key": "sid",
+    "expiry": 1209600
+  },
+  "cookieSessionKey": "sdata",
+  "metrics": null,
+  "i18n": {
+    "defaultLocale": "en-us",
+    "loadPaths": [
+      "/Users/nikki/work/ikenga/config/locales"
+    ]
+  },
+  "hostname": null,
+  "fullHostname": null,
+  "connectCompatibility": false,
+  "detailedErrors": true,
+  "model": {
+    "defaultAdapter": "mongo"
+  },
+  "db": {
+    "mongo": {
+      "dbname": "model_test"
+    }
+  },
+  "passport": {
+    "successRedirect": "/",
+    "failureRedirect": "/login",
+    "twitter": {
+      "consumerKey": "XXXXX",
+      "consumerSecret": "XXXXX"
+    },
+    "facebook": {
+      "clientID": "XXXXX",
+      "clientSecret": "XXXXX"
+    },
+    "yammer": {
+      "clientID": "XXXXX",
+      "clientSecret": "XXXXX"
+    }
+  },
+  "secret": "Y42foHRZ2jMjLtMfN3gFMSVMc7HpOVwpIsBNJ4jzcChJuHyzyPO0h3gYYP5AMsWzaW1Iw568DQoOkVF6g2CnRMnzobBUxIXeZi2OXjabtYC9cYLCqo3AKfsOF3MAapEX"
+}
+[Fri, 29 Mar 2013 21:58:06 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 21:58:06 GMT] INFO Server worker running in development on port 4000 with a PID of: 85028
+[Fri, 29 Mar 2013 21:59:26 GMT] INFO Code changed, killing 85028, cycling ...
+[Fri, 29 Mar 2013 21:59:26 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 21:59:36 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 21:59:51 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 21:59:56 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 22:00:26 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 22:00:31 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 22:03:22 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 22:03:52 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 22:03:52 GMT] INFO Server worker running in development on port 4000 with a PID of: 89020
+[Fri, 29 Mar 2013 22:06:52 GMT] INFO Code changed, killing 89020, cycling ...
+[Fri, 29 Mar 2013 22:06:52 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 22:06:52 GMT] INFO Server worker running in development on port 4000 with a PID of: 91067
+[Fri, 29 Mar 2013 22:07:07 GMT] INFO Code changed, killing 91067, cycling ...
+[Fri, 29 Mar 2013 22:07:07 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 22:07:07 GMT] INFO Server worker running in development on port 4000 with a PID of: 91158
+[Fri, 29 Mar 2013 22:07:32 GMT] INFO Code changed, killing 91158, cycling ...
+[Fri, 29 Mar 2013 22:07:32 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 22:07:32 GMT] INFO Server worker running in development on port 4000 with a PID of: 91309
+[Fri, 29 Mar 2013 22:13:02 GMT] INFO Code changed, killing 91309, cycling ...
+[Fri, 29 Mar 2013 22:13:02 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 22:13:03 GMT] INFO Server worker running in development on port 4000 with a PID of: 95267
+[Fri, 29 Mar 2013 22:19:43 GMT] INFO Code changed, killing 95267, cycling ...
+[Fri, 29 Mar 2013 22:19:43 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 22:19:43 GMT] INFO Server worker running in development on port 4000 with a PID of: 99913

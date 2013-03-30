@@ -1,0 +1,72 @@
+[Fri, 29 Mar 2013 22:19:45 GMT] INFO Server starting with config: {
+  "environment": "development",
+  "workers": 1,
+  "port": 4000,
+  "spdy": null,
+  "ssl": null,
+  "debug": true,
+  "rotateWorkers": false,
+  "rotationWindow": 7200000,
+  "rotationTimeout": 300000,
+  "logDir": "/Users/nikki/work/ikenga/log",
+  "gracefulShutdownTimeout": 30000,
+  "heartbeatInterval": 5000,
+  "heartbeatWindow": 20000,
+  "staticFilePath": "/Users/nikki/work/ikenga/public",
+  "sessions": {
+    "store": "memory",
+    "key": "sid",
+    "expiry": 1209600
+  },
+  "cookieSessionKey": "sdata",
+  "metrics": null,
+  "i18n": {
+    "defaultLocale": "en-us",
+    "loadPaths": [
+      "/Users/nikki/work/ikenga/config/locales"
+    ]
+  },
+  "hostname": null,
+  "fullHostname": null,
+  "connectCompatibility": false,
+  "detailedErrors": true,
+  "model": {
+    "defaultAdapter": "mongo"
+  },
+  "db": {
+    "mongo": {
+      "dbname": "model_test"
+    }
+  },
+  "passport": {
+    "successRedirect": "/",
+    "failureRedirect": "/login",
+    "twitter": {
+      "consumerKey": "XXXXX",
+      "consumerSecret": "XXXXX"
+    },
+    "facebook": {
+      "clientID": "XXXXX",
+      "clientSecret": "XXXXX"
+    },
+    "yammer": {
+      "clientID": "XXXXX",
+      "clientSecret": "XXXXX"
+    }
+  },
+  "secret": "Y42foHRZ2jMjLtMfN3gFMSVMc7HpOVwpIsBNJ4jzcChJuHyzyPO0h3gYYP5AMsWzaW1Iw568DQoOkVF6g2CnRMnzobBUxIXeZi2OXjabtYC9cYLCqo3AKfsOF3MAapEX"
+}
+[Fri, 29 Mar 2013 22:19:45 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 22:19:45 GMT] INFO Server worker running in development on port 4000 with a PID of: 99932
+[Fri, 29 Mar 2013 22:23:55 GMT] INFO Code changed, killing 99932, cycling ...
+[Fri, 29 Mar 2013 22:23:55 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 22:23:56 GMT] INFO Server worker running in development on port 4000 with a PID of: 2888
+[Fri, 29 Mar 2013 22:24:00 GMT] INFO Code changed, killing 2888, cycling ...
+[Fri, 29 Mar 2013 22:24:00 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 22:24:01 GMT] INFO Server worker running in development on port 4000 with a PID of: 2919
+[Fri, 29 Mar 2013 22:24:20 GMT] INFO Code changed, killing 2919, cycling ...
+[Fri, 29 Mar 2013 22:24:20 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 22:24:21 GMT] INFO Server worker running in development on port 4000 with a PID of: 3040
+[Fri, 29 Mar 2013 22:25:31 GMT] INFO Code changed, killing 3040, cycling ...
+[Fri, 29 Mar 2013 22:25:31 GMT] INFO Creating 1 worker process.
+[Fri, 29 Mar 2013 22:25:31 GMT] INFO Server worker running in development on port 4000 with a PID of: 3781
