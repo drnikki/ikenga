@@ -4,7 +4,7 @@ var Entries = function () {
   this.index = function (req, resp, params) {
     var self = this;
 
-    geddy.model.Entry.all(function(err, entries) {
+    geddy.model.Entry.all({userId : this.session.get('userId')}, function(err, entries) {
       self.respond({params: params, entries: entries});
     });
   };
@@ -14,11 +14,9 @@ var Entries = function () {
   };
 
   this.create = function (req, resp, params) {
-    // insert the logged in user's user id.
-    var User = geddy.model.User;
-    // @todo - make sure this page is auth-restricted so this if isn't necessary.
     logged_in_id = this.session.get('userId');
     if (!logged_in_id) {
+        //@ todo - this should be auth restricted
         logged_in_id = "REMOVE ME THIS IS TESTING";
     }
     params.userId = logged_in_id;

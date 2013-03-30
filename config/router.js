@@ -41,6 +41,8 @@ router.get('/').to('Main.index');
 
 router.resource('stories');
 
+router.get('/refresh').to('Stories.pivotalRefresh');
+
 router.get('/login').to('Main.login');
 router.get('/logout').to('Main.logout');
 router.post('/auth/local').to('Auth.local');

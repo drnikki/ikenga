@@ -17,6 +17,14 @@ var User = function () {
   this.hasMany('Entries');
   this.hasMany('Stories'); // @todo rlly?
 
+  // this is where a user object would populate itself 
+  // with whatever pivotal tracker data it actually needs
+  // @todo.
+  this.getPivotalData = function() {
+    // this is it.
+
+  }
+
 };
 
 User = geddy.model.register('User', User);
