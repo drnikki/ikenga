@@ -17,7 +17,8 @@
 */
 
 var config = {
-  detailedErrors: true
+  realtime: true
+, detailedErrors: true
 , debug: true
 , hostname: null
 , port: 4000
