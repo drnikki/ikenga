@@ -62,7 +62,20 @@ var Users = function () {
         err.statusCode = 400;
         self.error(err);
       } else {
-        user.password = '';
+        user.getPivotalData(function(err, user) {
+          // whattttt?  and whyyyyyy?  and i hate javascript 
+          user.save(function(err, data) {
+          if (err) {
+            params.errors = err;
+
+            self.respond({params: params, user: user.toObj()});
+          }
+          else {
+            self.respond({params: params, user: user.toObj()});
+          }
+        });
+
+        });
         self.respond({params: params, user: user.toObj()});
       }
     });
@@ -118,6 +131,31 @@ var Users = function () {
       }
     });
   };
+
+  // can take parameters for what needs refreshing.
+  // should be little callback links next to things.
+  this.refreshPivotal = function (req, resp, params) {
+    var self = this;
+
+    geddy.model.User.first(this.session.get('userId'), function(err, user) {
+      if (!user) {
+        var err = new Error();
+        err.statusCode = 400;
+        self.error(err);
+      } else {
+
+        user.getPivotalData();
+        console.log(user.projects);
+        console.log(user);
+        user.save(function(err, data) {});  // questionably located and implemented
+        //self.respond({params: params, user: user.toObj()});
+        self.redirect({controller: self.name});
+
+
+
+       }
+    });
+  }
 
 };
 
